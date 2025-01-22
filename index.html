@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trumpato</title>
+    <link rel="icon" href="Trumpato.jpg">
+    <style>
+        @font-face {
+            font-family: "Wawa";
+            src: url("wawa.otf");
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: "Wawa", sans-serif;
+            text-align: center;
+            font-size: 3rem;
+            margin: 2rem 0;
+        }
+
+        .headline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .headline img {
+            max-width: 300px;
+            border-radius: 15px;
+        }
+
+        .falling-potatoes {
+            position: relative;
+            height: 2000px;
+        }
+
+        .potato {
+            position: absolute;
+            font-family: "Wawa", sans-serif;
+            text-align: center;
+            animation: fall 3s ease-in-out forwards;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header class="headline">
+        <h1>Trumpato</h1>
+        <img src="Trumpato.jpg" alt="Trumpato">
+    </header>
+
+    <section class="falling-potatoes">
+        <div class="potato" style="top: 100px; left: 20%;">
+            <img src="basetato.png" alt="Base Potato" width="150">
+            <p>6.9k USD Market Cap</p>
+        </div>
+        <div class="potato" style="top: 400px; left: 40%;">
+            <img src="bidenato.png" alt="Biden Potato" width="150">
+            <p>69k USD Market Cap</p>
+        </div>
+        <div class="potato" style="top: 700px; left: 60%;">
+            <img src="gretato.png" alt="Greta Potato" width="150">
+            <p>690k USD Market Cap</p>
+        </div>
+        <div class="potato" style="top: 1000px; left: 30%;">
+            <img src="magato.png" alt="MAGA Potato" width="150">
+            <p>6.9M USD Market Cap</p>
+        </div>
+        <div class="potato" style="top: 1300px; left: 50%;">
+            <img src="toptato.png" alt="Top Potato" width="150">
+            <p>69M USD Market Cap</p>
+        </div>
+        <div class="potato" style="top: 1600px; left: 70%;">
+            <img src="supertato.png" alt="Super Potato" width="150">
+            <p>6.9B USD Market Cap</p>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://example.com">X</a>
+        <a href="https://t.me/example">Telegram</a>
+    </footer>
+</body>
+</html>
